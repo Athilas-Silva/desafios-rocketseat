@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+:root{
+    --button: #FF0000;
+    --main-background:  #C4C4C4;
+    --background: #E5E5E5;
+    --text: #000;
+    --footer: #000;
+    --text-description: #9C9696;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    outline: none;
+    border: none;
+}
+
+html{
+    font-size: 62.5%; /* Tamanho padrão de 10px */
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Roboto", sans-serif;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    width: 100%;
+}
+
+/* Lado esquerdo =======================> */
+#left{
+    background-color: var(--background);
+}
+
+.top{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1.5rem;
+}
+
+.top #logo{
+    width: 4rem;
+}
+
+.top a{
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+#left .content{
+    padding: 8rem;
+}
+
+#left .content h1{
+    font-size: 4rem;
+}
+
+#left p{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: var(--text-description);
+    margin: 1.4rem 0 5rem 0;
+}
+
+#left #price-buy{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+#left #price-buy span{
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+#left #price-buy button{
+    cursor: pointer;
+    padding: 2rem;
+    width: 20rem;
+    margin: 0 auto;
+    background-color: var(--button);
+    font-size: 1.6rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+/* Lado direito ========================> */
+#right{
+    background-color: var(--main-background);
+}
+
+.top #buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    position: relative;
+}
+
+.top input{
+    height: 4rem;
+    width: 20rem;
+    text-align: center;
+}
+
+.top input::placeholder{
+    text-align: center;
+}
+
+.top #buttons button{
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: transparent;
+    z-index: 10;
+}
+
+.top #buttons button img{
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.sr-only{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+#right .img-main > img{
+    display: block;
+    margin: 0 auto;
+}
+
+#right .imgs{
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1rem;
+}
+
+/* Lado direito ========================> */
+footer{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--background);
+    height: 16rem;
+}
+
+footer > img{
+    height: 100%;
+}
+
+footer a{
+    font-size: 2.2rem;
+    margin: 0 3rem;
+    color: var(--text);
+}
+
+footer button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    width: 30%;
+    background-color: var(--footer);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 300;
+    gap: 3rem;
+    cursor: pointer;
+}
