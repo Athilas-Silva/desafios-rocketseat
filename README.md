@@ -23,3 +23,23 @@ Este desafio consiste em fazer um pequeno e-commerce de calçados esportivos.
 ### Resultado Final:
 
 - [RocketShoes](https://athilas-silva.github.io/desafios-rocketseat/rocketShoes/index.html)
+
+##
+
+## Segundo desafio:
+
+## Ferramentas utilizadas:
+
+- Vs Code
+- HTML
+- CSS
+- [Google Fonts](https://fonts.google.com/)
+- [Layout](https://www.figma.com/file/yi1ycIyAW8QiGiX9bMFHkU/DD-%2F-Social-links/duplicate)
+
+![social-links](https://user-images.githubusercontent.com/71888055/155003782-9e70bd16-45d3-4255-8d7d-baa6da87471e.png)
+
+##
+
+## Resultado Final:
+
+- [Social Tree](https://athilas-silva.github.io/desafios-rocketseat/social-links/index.html)
