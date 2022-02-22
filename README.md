@@ -2,8 +2,6 @@
 
  Desafios de programação da Rocketseat
 
-##
-
 ## Primeiro desafio:
 
 Este desafio consiste em fazer um pequeno e-commerce de calçados esportivos.
@@ -28,6 +26,8 @@ Este desafio consiste em fazer um pequeno e-commerce de calçados esportivos.
 
 ## Segundo desafio:
 
+Esse desafio se baseia em criar uma página com uma lista de links (menu) que pode ser usada em perfis de redes sociais para direcionar o usuário para o local escolhido. Utilizando HTML e CSS.
+
 ## Ferramentas utilizadas:
 
 - Vs Code
@@ -43,3 +43,24 @@ Este desafio consiste em fazer um pequeno e-commerce de calçados esportivos.
 ## Resultado Final:
 
 - [Social Tree](https://athilas-silva.github.io/desafios-rocketseat/social-links/index.html)
+
+##
+
+## Terceiro desafio
+
+Nesse desafio você deve criar uma página de coming soon (em breve) para o lançamento de um site, produto ou serviço, e na página deve ter um countdown timer (timer de contagem regressiva) informando quanto tempo falta para o lançamento. Utilizando HTML, CSS e Javascript.
+
+## Ferramentas utilizadas:
+
+- Vs Code
+- HTML
+- CSS
+- Javascript
+- [Google Fonts](https://fonts.google.com/)
+- [Layout](https://www.figma.com/file/oDZqw3v8fem3v3RC7bTKV5/DD-%2F-Countdown/duplicate?node-id=0%3A1)
+
+![countdown](https://user-images.githubusercontent.com/71888055/155165166-a493c235-ac67-4218-ab79-3f14b85420e9.png)
+
+## Resultado final:
+
+- [Countdown](https://athilas-silva.github.io/desafios-rocketseat/countdown/index.html)
