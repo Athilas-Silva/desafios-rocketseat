@@ -64,3 +64,24 @@ Nesse desafio você deve criar uma página de coming soon (em breve) para o lan�
 ## Resultado final:
 
 - [Countdown](https://athilas-silva.github.io/desafios-rocketseat/countdown/index.html)
+
+##
+
+## Quarto desafio
+
+O desafio foi criar uma sidebar. Quando o usuário clicar no ícone do menu isso deve fazer com que o estado da sidebar mude entre aberto e fechado. Mostrando ícones e texto quando estiver aperto e com ele fechado mostrando apenas os ícones.
+
+## Ferramentas utilizadas:
+
+- Vs Code
+- HTML
+- CSS
+- Javascript
+- [Google Fonts](https://fonts.google.com/)
+- [Layout](https://www.figma.com/file/iOuqAlZvhAMkkfjCMFyc7Y/DD-%2F-Sidebar-Responsiva/duplicate?node-id=0%3A1)
+
+![sidebar](https://user-images.githubusercontent.com/71888055/155397389-04e87ecd-2cb3-45df-88c2-2e74b69f877d.jpg)
+
+## Resultado final
+
+- [Sidebar](https://athilas-silva.github.io/desafios-rocketseat/sidebar/index.html)
