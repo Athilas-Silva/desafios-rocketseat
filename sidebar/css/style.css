@@ -165,6 +165,7 @@ body{
     object-fit: cover;
     border-radius: 1rem;
     margin-right: 1rem;
+    padding-left: 0;
     opacity: 0;
 }
 
