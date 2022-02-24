@@ -85,3 +85,23 @@ O desafio foi criar uma sidebar. Quando o usuário clicar no ícone do menu isso
 ## Resultado final
 
 - [Sidebar](https://athilas-silva.github.io/desafios-rocketseat/sidebar/index.html)
+
+##
+## Quinto desafio
+
+Desenvolver uma página para captação de leads ou newsletter.
+
+## Ferramentas utilizadas:
+
+- Vs Code
+- HTML
+- CSS
+- Javascript
+- [Google Fonts](https://fonts.google.com/)
+- [Layout](https://www.figma.com/file/OVTHLjc2hi3MSQiYm9BplU/DD-%2F-RocketNews/duplicate?node-id=3%3A2)
+
+![news](https://user-images.githubusercontent.com/71888055/155557312-9e6df2e4-ec34-4d57-a59a-9ac090fae8c8.png)
+
+## Resultado final
+
+- [Rocketnews](https://athilas-silva.github.io/desafios-rocketseat/rocketnews/index.html)

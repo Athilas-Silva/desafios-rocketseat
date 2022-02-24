@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&family=Work+Sans:wght@400;500;700&display=swap');
+
+:root{
+    --body-bg-color: #121214;
+    --text-color: #E1E1E6;
+    --title-color: #04D361;
+    --form-color: #A8A8A8;
+    --bg-button-color: #8257e5;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    background-color: var(--body-bg-color);
+    width: 100%;
+    height: 100%;
+}
+
+main #read{
+    height: 100%;
+    width: 50%;
+    object-fit: cover;
+}
+
+.content-wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem;
+    width: 50%;
+}
+
+#logo{
+    width: 80rem;
+}
+ 
+#logo img{
+    width: 40rem;
+}
+
+.text{
+    height: 16rem;
+    width: 100%;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+}
+
+.text h1{
+    font-family: "Work Sans", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    line-height: 2.8rem;
+    color: var(--title-color);
+    margin-bottom: 1rem;
+}
+
+.text p{
+    font-family: "Spartan", sans-serif;
+    font-size: 1.4rem;
+}
+
+.text .sub-text:nth-child(2){
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: #fff;
+}
+
+.text .sub-text:nth-child(3){
+    margin-top: 1rem;
+    line-height: 1.9rem;
+    color: var(--text-color);
+}
+
+#form{
+    height: 10rem;
+    width: 100%;
+}
+
+#form h2{
+    font-family: "Spartan", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--form-color);
+}
+
+#form #box{
+    display: flex;
+    align-items: center;
+    position: relative;
+    margin-top: 1rem;
+}
+
+#form span{
+    height: 4.8rem;
+    width: .4rem;
+    border: .2rem solid var(--title-color);
+}
+
+#form input{
+    font-size: 1.4rem;
+    font-family: "Spartan", sans-serif;
+    color: var(--body-bg-color);
+    height: 4.8rem;
+    width: 70rem;
+    position: absolute;
+    top: 0;
+    left: 0.7%; 
+    padding-left: 1rem;
+    filter: drop-shadow(.4rem, 1rem, 1.5rem, rgba(0, 0, 0, 0.5));
+}
+
+#form form #box button{
+    height: 4.8rem;
+    width: 4.8rem;
+    position: absolute; 
+    top: 0;
+    left: 113%;
+    cursor: pointer;
+}
+
+#form form #box button img{
+    background-color: var(--bg-button-color);
+    padding: 1.2rem;
+}
+
+#link{
+    display: flex;
+    align-items: center;
+    height: 5rem;
+    width: 100%;
+}
+
+#link a{
+    font-family: "Spartan", sans-serif;
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: var(--bg-button-color);
+}
+
+#link img{
+    margin-left: .5rem;
+    cursor: pointer;
+}
+
+/* Responsividade */
+@media(min-width: 300px) and (max-width: 800px){
+    main #read{
+        display: none;
+    }
+    .content-wrapper{
+        width: 100%;
+        height: 100%;
+    }
+
+    .content-wrapper #logo{
+        width: 100%;
+    }
+
+    .content-wrapper #logo img{
+        width: 30rem;
+    }
+
+    .text h1{
+        font-size: 2rem;
+    }
+
+    #form{
+        margin-top: 4rem;
+    }
+
+    #form form #box input{
+        width: 90%;
+    }
+
+    #form form #box button{
+        left: 90%;
+    }
+}
