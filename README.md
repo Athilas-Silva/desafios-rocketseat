@@ -105,3 +105,25 @@ Desenvolver uma página para captação de leads ou newsletter.
 ## Resultado final
 
 - [Rocketnews](https://athilas-silva.github.io/desafios-rocketseat/rocketnews/index.html)
+
+##
+
+## Sexto desafio
+
+A proposta desse desafio foi desenvolver um card que traga as informações da API do Github e tenha um botão que altere a cor do fundo do card.
+
+## Ferramentas utilizadas:
+
+- Vs Code
+- HTML
+- CSS
+- Javascript
+- [Google Fonts](https://fonts.google.com/)
+- [Github API](https://api.github.com/)
+- [Layout](https://www.figma.com/file/xszb6WTlwCXWqE5jg4q2SO/DD-%2F-Rocketcard/duplicate?node-id=3%3A2)
+
+![preview](https://user-images.githubusercontent.com/71888055/156444911-17abf62a-1417-4638-a56e-bdbadbcb4d69.gif)
+
+## Resultado final
+
+- [Rocketcard](https://athilas-silva.github.io/desafios-rocketseat/rocketcard/index.html)
