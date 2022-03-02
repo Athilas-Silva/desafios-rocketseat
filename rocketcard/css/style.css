@@ -1,0 +1,205 @@
+@import url('https://fonts.googleapis.com/css2?family=Prompt:wght@100;400;700&display=swap');
+
+:root {
+    --bg: #000000;
+    --bg-card: #0E1218;
+    --text: #F1F1F1;
+    --img-profile: #8257e5;
+    --buttons: #FFF;
+    --border-button: #1A1A1A;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+}
+
+html{
+    font-size: 62.5%; /* Fonte padrão 10px */
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    font-family: "Prompt", sans-serif;
+    background-color: var(--bg-card);
+    display: flex;
+}
+
+h1{
+    color: var(--text);
+    font-size: 2rem;
+    line-height: 3rem;
+}
+
+.card-wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 50%;
+}
+
+.bg-card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 50rem;
+    width: 40rem;
+    background-color: var(--bg);
+    border-radius: 2rem;
+}
+
+.card{
+    padding: 2rem;
+    height: 90%;
+    width: 35rem;
+    border-radius: 2rem;
+    background-color: var(--bg-card);
+}
+
+.card header{
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.card header img{
+    padding: .8rem;
+    width: 5rem;
+    border: 1px solid var(--text);
+    border-radius: 50%;
+}
+
+.card header p{
+    font-size: 1.6rem;
+    color: var(--text);
+}
+
+.card #photo{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    height: 10rem;
+    width: 100%;
+    position: relative;
+}
+
+.card #photo img{
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    border: 5px solid var(--img-profile);
+    transform: translateY(5rem);
+}
+
+.infos{
+    display: flex;
+    flex-direction: column;
+    height: 16rem;
+    width: 14rem;
+    padding: 1rem;
+    border-radius: 4rem;
+    background: linear-gradient(180deg, #000000 3.65%, rgba(70, 69, 69, 0.72) 53.65%, rgba(62, 56, 56, 0.42) 100%);
+    position: absolute;
+}
+
+.infos .infoUser{
+    display: flex;
+    gap: .5rem;
+    margin: .5rem 0;
+}
+
+.infos .infoUser p{
+    font-size: 1.2rem;
+    color: var(--text);
+}
+
+.card footer{
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+}
+
+.card footer img{
+    width: 4rem;
+}
+
+.card footer p{
+    margin-top: 75%;
+    font-size: 1.4rem;
+    color: var(--text);
+}
+
+.btn-background{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+    width: 50%;
+}
+
+.btn-background p{
+    font-size: 2rem;
+    font-weight: 400;
+    color: var(--text);
+}
+
+.btn-background button{
+    margin-top: 1rem;
+    height: 5rem;
+    width: 20rem;
+    border-radius: 1rem;
+    font-size: 1.6rem;
+    font-weight: 500;
+    border: 2px solid var(--border-button);
+    background-color: var(--bg);
+    color: var(--text);
+    cursor: pointer;
+}
+
+.btn-background a{
+    padding-top: 1.2rem;
+    padding-left: 5rem;
+    height: 5rem;
+    width: 20rem;
+    border: 2px solid var(--border-button);
+    border-radius: 1rem;
+    font-size: 1.4rem;
+    color: var(--text);
+    background-color: var(--bg);
+    margin-top: 1.5rem;
+}
+
+/* Responsividade */
+@media (min-width: 300px) and (max-width: 800px){
+    body{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    h1{
+        font-size: 1.6rem;
+        text-align: center;
+    }
+
+    .card-wrapper{
+        order: 2;
+    }
+
+    .btn-background{
+        order: 1;
+    }
+
+    .btn-background p{
+        text-align: center;
+        font-size: 1.6rem;
+        margin-top: 2rem;
+    }
+}
