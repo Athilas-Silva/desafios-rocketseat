@@ -127,3 +127,23 @@ A proposta desse desafio foi desenvolver um card que traga as informações da A
 ## Resultado final
 
 - [Rocketcard](https://athilas-silva.github.io/desafios-rocketseat/rocketcard/index.html)
+
+##
+
+## Sétimo desafio
+
+Neste desafio foi proposto desenvolver uma página com uma tabela com as opções de preços/planos do produto/serviço.
+
+## Ferramentas utilizadas:
+
+- Vs Code
+- HTML
+- CSS
+- [Google Fonts](https://fonts.google.com/)
+- [Layout](https://www.figma.com/file/sSq019RDznSm3eyZoo3OHc/DD-%2F-Pricing-Table/duplicate)
+
+![Desktop](https://user-images.githubusercontent.com/71888055/156863439-e1638561-00cc-4d34-b1dd-435ea24d6497.png)
+
+## Resultado final
+
+- [Pricing Table](https://athilas-silva.github.io/desafios-rocketseat/pricingtable/index.html)

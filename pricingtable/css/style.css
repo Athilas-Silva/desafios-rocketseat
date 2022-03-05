@@ -1,0 +1,207 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
+:root {
+    --yellow: #ffcc29;
+    --blue: #1d539e;
+    --gray: #828799;
+    --page-background: #f9fbfc;
+    --text-color: #1e2338;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%; /* Fonte padrão 10px */
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 50vh;
+    width: 100%;
+    text-align: center;
+    background-color: var(--blue);
+}
+
+header h1{
+    font-size: 4rem;
+    font-weight: 700;
+    line-height: 6rem;
+    color: var(--page-background);
+}
+
+header p{
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+    color: var(--page-background);
+}
+
+section{
+    display: flex;
+    height: 50vh;
+    width: 100%;
+    background-color: var(--page-background);
+}
+
+.card-wrapper{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.card{
+    display: flex;
+    flex-direction: column;
+    height: 38rem;
+    width: 35rem;
+    background-color: var(--page-background);
+    padding: 2rem;
+    border-radius: .8rem;
+    box-shadow: 0px 1px 2px rgba(142, 150, 185, 0.25);
+    transform: translateY(-7rem);
+}
+
+.title{
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 2rem;
+    color: var(--text-color);
+}
+
+.price{
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 4rem;
+    color: var(--text-color);
+}
+
+.price span{
+    font-size: 1.8rem;
+    line-height: 2rem;
+    color: var(--gray);
+}
+
+.subtitle{
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--gray);
+}
+
+.line{
+    margin: 2rem 0;
+    border: 1px solid #eee;
+    width: 100%;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+}
+
+.form .bonus{
+    margin: .5rem 0;
+}
+
+.form .bonus p{
+    font-size: 1.4rem;
+    line-height: 2rem;
+}
+
+.card .btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    width: 90%;
+    position: fixed;
+    bottom: 2%;
+}
+
+.card .btn button{
+    display: block;
+    margin: 0 auto;
+    width: 100%;
+    height: 4rem;
+    border: 1px solid var(--blue);
+    border-radius: 2rem;
+    cursor: pointer;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    color: var(--blue);
+    background-color: transparent;
+}
+
+/* Card central */
+.card:nth-child(2){
+    height: 40rem;
+    transform: translateY(-8rem);
+}
+
+.card:nth-child(2) #box{
+    position: relative;
+}
+
+.card:nth-child(2) #titleBox{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 1.5rem;
+    background-color: var(--yellow);
+    border-radius: 8px 8px 0 0;
+}
+
+.card:nth-child(2) #titleBox .title{
+    color: var(--blue);
+}
+
+.card:nth-child(2) #titleBox span{
+    background-color: var(--blue);
+    padding: .8rem 3rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+    color: #fff;
+}
+
+.card:nth-child(2) .price{
+    margin-top: 4rem;
+}
+
+.card:nth-child(2) button{
+    background-color: var(--blue);
+    color: #fff;
+}
+
+@media(min-width: 300px) and (max-width: 800px){
+    header{
+        margin-bottom: 3rem;
+    }
+    .card-wrapper{
+        gap: 4rem;
+    }
+
+    .card:nth-child(2){
+        transform: translateY(-7rem);
+    }
+}
