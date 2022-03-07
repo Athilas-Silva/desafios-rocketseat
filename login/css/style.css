@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Roboto:wght@400;500&display=swap');
+
+:root {
+    --text-base: #afb6c2;
+    --text-title: #d4ccb6;
+    --background: #191816;
+    --form-background: #24221f;
+    --primary-color: #ffc632;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    outline: none;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    height: 100vh;
+    width: 100vw;
+    overflow-x: hidden;
+}
+
+main{
+    display: flex;
+    height: 100%;
+    width: 100%;
+}
+
+#content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    background-color: var(--background);
+    padding: 4rem;
+}
+
+header{
+    margin-bottom: 10rem;
+}
+
+header img{
+    position: fixed;
+    top: 5%;
+    left: 8%;
+}
+
+#container-form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--form-background);
+    padding: 4rem;
+    border-radius: 4px;
+    width: 45rem;
+    height: 45rem;
+}
+
+#container-form form{
+    height: 35rem;
+    width: 30rem;
+}
+
+#container-form .title{
+    display: flex;
+    gap: 1rem;
+    align-items: center;
+}
+
+#container-form .title h1{
+    font-family: "Poppins", sans-serif;
+    font-size: 2.4rem;
+    font-weight: 600;
+    line-height: 3rem;
+    color: var(--text-title);
+}
+
+#container-form form p{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.2rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-base);
+}
+
+#container-form form .email,
+#container-form form .password{
+    position: relative;
+    width: 100%;
+    margin: 2rem 0;
+}
+
+#container-form form .email label,
+#container-form form .password label{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.4rem;
+    font-weight: 500;
+    line-height: 2rem;
+    color: var(--text-base);
+}
+
+#container-form form .email input,
+#container-form form .password input{
+    height: 4rem;
+    width: 100%;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    color: var(--text-title);
+    padding-left: 3rem;
+    background-color: transparent;
+    border: 1px solid #868686;
+    border-radius: 4px;
+}
+
+#container-form form .email input:focus-within{
+    border-color: var(--primary-color);
+    background-image: url("../img/mail-focus.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: .4rem;
+}
+
+#container-form form .email img{
+    position: absolute;
+    bottom: 1rem;
+    left: .5rem;
+}
+
+#container-form form .email:focus-within img.hidden,
+#container-form form .password:focus-within img.hidden{
+    visibility: hidden;
+}
+
+#container-form form .password .lock{
+    position: absolute;
+    top: 3rem;
+    left: .5rem;
+}
+
+#container-form form .password input:focus-within{
+    border-color: var(--primary-color);
+    background-image: url("../img/lock-focus.svg");
+    background-repeat: no-repeat;
+    background-position: left center;
+    background-position-x: .4rem;
+}
+
+#container-form form .password .eye{
+    position: absolute;
+    top: 3rem;
+    right: .5rem;
+}
+
+#container-form #option{
+    display: flex;
+    align-items: center;
+    gap: 1.2rem;
+    height: 5rem;
+    width: 100%;
+    position: relative;
+}
+
+/* Criando o checkbox */
+#container-form #option #checkmark{
+    position: absolute;
+    top: 1.5rem;
+    left: 0;
+    height: 2rem;
+    width: 2rem;
+    background-color: var(--form-background);
+    border-radius: 2px;
+    border: 1px solid var(--text-base);
+}
+
+/* Quando o checkbox é clicado, adiciona o fundo amarelo */
+#container-form #option label input:checked ~ #checkmark{
+    background-color: var(--primary-color);
+}
+
+/* Criando o icone de check - Escondido quando não selecionado */
+#container-form #option label #checkmark::after{
+    content: "";
+    position: absolute;
+    display: none;
+    left: .6rem;
+    top: .1rem;
+    width: .5rem;
+    height: 1rem;
+    border: solid var(--background);
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* Exibir o icone quando selecionado */
+#container-form #option label input:checked ~ #checkmark::after{
+    display: block;
+}
+
+#container-form #option a{
+    font-family: "Roboto", sans-serif;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    color: var(--text-base);
+}
+
+#container-form form #btns{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+    height: 8rem;
+}
+
+#container-form form #btns button{
+    width: 90%;
+    height: 5rem;
+    background-color: var(--primary-color);
+    border-radius: 4px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.4rem;
+    text-transform: uppercase;
+    cursor: pointer;
+}
+
+#container-form form #btns a{
+    font-family: "Poppins", sans-serif;
+    font-size: 1.2rem;
+    line-height: 2rem;
+    color: var(--primary-color);
+}
+
+main #img{
+    height: 100%;
+    width: 50%;
+}
+
+main #img img{
+    height: 100%;
+    width: 100%;
+}
+
+/* Responsividade */
+@media(min-width: 300px) and (max-width: 800px){
+    #content{
+        width: 100%;
+        padding: 0;
+    }
+
+    #container-form{
+        padding: 2rem;
+        height: 40rem;
+        width: 35rem;
+        background-color: transparent;
+    }
+
+    main #img{
+        display: none;
+    }
+}
